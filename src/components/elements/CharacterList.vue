@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 gap-4 my-8 py-8">
+  <div class="grid grid-cols-1 lg:grid-cols-5 sm:grid-cols-2 gap-4 my-8 py-8">
     <slot></slot>
   </div>
 </template>
