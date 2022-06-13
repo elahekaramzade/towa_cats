@@ -21,18 +21,20 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    getPeople({ commit }, queryParam) {
-      return instance.get('people', {
+    async getPeople({ commit }, queryParam) {
+      const data = await instance.get('people', {
         params: queryParam
-      }).then((data) => {
+      });
+      if (data && data.status == 200) {
         commit('setPeople', data.data.results)
         commit('setPaginate', {
           next: data.data.next,
           prev: data.data.previous
         })
-      }).catch(() => {
+      }
+      else {
         commit('setErrorMsg', 'Something went wrong...:(')
-      });
+      }
     }
   },
   modules: {},
