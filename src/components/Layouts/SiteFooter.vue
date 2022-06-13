@@ -1,7 +1,7 @@
 <template>
-  <footer>
-    <div class="w-full bg-rose-500 fixed bottom-0 right-0 p-4 text-white">
-      @copy right
+  <footer class="w-full bg-black fixed bottom-0 right-0 p-4 text-white ">
+    <div class="h-18">
+      TOWA CODING CHALLANGE
     </div>
   </footer>
 </template>

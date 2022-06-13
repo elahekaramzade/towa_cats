@@ -1,15 +1,15 @@
 <template>
   <div class="col-span-1 border border-gray-200 rounded-md shadow-lg h-full transition-all ease-in duration-300 cursor-pointer  hover:-translate-y-1">
     <div class="flex flex-col w-full">
-      <div>
+      <div class="bg-white">
         <img
-          src="../../assets/img/villain.png"
+          src="../../assets/img/SVG/yoda.svg"
           alt=""
           class="h-full w-full rounded-md"
         >
 
       </div>
-      <div class="bg-amber-300 text-gray-600 rounded-b-md flex flex-col h-full p-2">
+      <div class="bg-black text-slate-200 rounded-b-md flex flex-col h-full p-2 font-bold">
         <div class="flex justify-between text-sm">
           <h2>Name</h2>
           <span>{{character.name}}</span>

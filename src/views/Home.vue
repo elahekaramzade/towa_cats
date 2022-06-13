@@ -9,6 +9,10 @@
       />
     </CharacterList>
     <Pagination :paginate="paginate" />
+    <Alert
+      v-if="errorMsg"
+      :errorMsg="errorMsg"
+    />
   </div>
 </template>
 
@@ -18,6 +22,7 @@ import CharacterList from "@/components/elements/CharacterList.vue";
 import CharacterBox from "@/components/elements/CharacterBox.vue";
 import { genUniqueKey } from "../utils";
 import Pagination from "../components/elements/Pagination.vue";
+import Alert from "../components/elements/Alert.vue";
 export default {
   name: "Home",
   mixins: [
@@ -25,7 +30,7 @@ export default {
       methods: { genUniqueKey },
     },
   ],
-  components: { Search, CharacterList, CharacterBox, Pagination },
+  components: { Search, CharacterList, CharacterBox, Pagination, Alert },
   computed: {
     people() {
       return this.$store.state.people;
