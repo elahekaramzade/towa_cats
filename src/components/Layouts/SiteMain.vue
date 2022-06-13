@@ -1,6 +1,6 @@
 <template>
   <main class="mainSection w-full min-h-screen mt-20">
-    <div class="w-8/12 mx-auto py-16 px-4  h-full">
+    <div class="w-10/12 sm:w-8/12 mx-auto py-16 px-4  h-full">
       <slot></slot>
     </div>
   </main>
