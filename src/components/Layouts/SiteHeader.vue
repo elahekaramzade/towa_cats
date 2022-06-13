@@ -1,7 +1,7 @@
 <template>
-  <header>
-    <div class="w-full bg-red-200 p-8">
-      <h1 class="text-lg font-bold text-center text-white">List of Towa Cats 🐱</h1>
+  <header class="fixed top-0 right-0 w-full z-10">
+    <div class="w-full bg-rose-500 p-8">
+      <h1 class="text-lg font-bold text-center text-white">List of Star Wars 🗿</h1>
     </div>
   </header>
 </template>

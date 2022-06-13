@@ -18,6 +18,14 @@ export default {
       search: null,
     };
   },
+  watch: {
+    search(val) {
+      if (val)
+        this.$store.dispatch("getPeople", {
+          search: val,
+        });
+    },
+  },
 };
 </script>
 

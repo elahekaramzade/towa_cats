@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="w-full bg-red-200 fixed bottom-0 right-0 p-4 text-white">
+    <div class="w-full bg-rose-500 fixed bottom-0 right-0 p-4 text-white">
       @copy right
     </div>
   </footer>
