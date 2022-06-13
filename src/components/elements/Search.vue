@@ -24,6 +24,9 @@ export default {
         this.$store.dispatch("getPeople", {
           search: val,
         });
+      else {
+        this.$store.dispatch("getPeople");
+      }
     },
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6"
+    class="px-4 py-3 flex items-center justify-between sm:px-6"
     aria-label="Pagination"
   >
     <div class="flex-1 flex justify-between sm:justify-end">

@@ -9,7 +9,7 @@
         >
 
       </div>
-      <div class="bg-black text-slate-200 rounded-b-md flex flex-col h-full p-2 font-bold">
+      <div class="bg-black text-slate-200 rounded-b-md flex flex-col min-h-full p-2 font-bold">
         <div class="flex justify-between text-sm">
           <h2>Name</h2>
           <span>{{character.name}}</span>
