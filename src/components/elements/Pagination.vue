@@ -9,13 +9,17 @@
         v-if="paginate.prev"
         @click="goPrev"
         class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-white bg-yellow-400 hover:bg-yellow-300"
-      > Previous </button>
+      >
+        Previous
+      </button>
       <button
         type="button"
         v-if="paginate.next"
         @click="goNext"
         class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-white bg-yellow-400 hover:bg-yellow-300"
-      > Next </button>
+      >
+        Next
+      </button>
     </div>
   </nav>
 </template>

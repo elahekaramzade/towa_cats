@@ -1,38 +1,41 @@
 <template>
-  <div class="col-span-1 border border-gray-200 rounded-md shadow-lg h-full transition-all ease-in duration-300 cursor-pointer  hover:-translate-y-1">
+  <div
+    class="col-span-1 border border-gray-200 rounded-md shadow-lg h-full transition-all ease-in duration-300 cursor-pointer hover:-translate-y-1"
+  >
     <div class="flex flex-col w-full">
       <div class="bg-white">
         <img
           src="../../assets/img/SVG/yoda.svg"
           alt=""
           class="h-full w-full rounded-md"
-        >
-
+        />
       </div>
-      <div class="bg-black text-slate-200 rounded-b-md flex flex-col min-h-full p-2 font-bold">
+      <div
+        class="bg-black text-slate-200 rounded-b-md flex flex-col min-h-full p-2 font-bold"
+      >
         <div class="flex justify-between text-sm">
           <h2>Name</h2>
-          <span>{{character.name}}</span>
+          <span>{{ character.name }}</span>
         </div>
         <div class="flex justify-between text-sm">
           <h2>Skin color</h2>
-          <span>{{character.skin_color}}</span>
+          <span>{{ character.skin_color }}</span>
         </div>
         <div class="flex justify-between text-sm">
           <h2>Hair Color</h2>
-          <span>{{character.hair_color}}</span>
+          <span>{{ character.hair_color }}</span>
         </div>
         <div class="flex justify-between text-sm">
           <h2>Gender</h2>
-          <span>{{character.gender}}</span>
+          <span>{{ character.gender }}</span>
         </div>
         <div class="flex justify-between text-sm">
           <h2>Height</h2>
-          <span>{{character.height}}</span>
+          <span>{{ character.height }}</span>
         </div>
         <div class="flex justify-between text-sm">
           <h2>Mass</h2>
-          <span>{{character.mass}}</span>
+          <span>{{ character.mass }}</span>
         </div>
         <div class="flex justify-between text-sm">
           <h2>Home World</h2>
@@ -70,5 +73,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

@@ -1,41 +1,40 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import instance from "../ApiCall"
+import instance from "../ApiCall";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     people: [],
     paginate: {},
-    errorMsg: null
+    errorMsg: null,
   },
   mutations: {
     setPeople(state, people) {
-      state.people = people
+      state.people = people;
     },
     setPaginate(state, paginate) {
-      state.paginate = paginate
+      state.paginate = paginate;
     },
     setErrorMsg(state, errorMsg) {
-      state.errorMsg = errorMsg
-    }
+      state.errorMsg = errorMsg;
+    },
   },
   actions: {
     async getPeople({ commit }, queryParam) {
-      const data = await instance.get('people', {
-        params: queryParam
+      const data = await instance.get("people", {
+        params: queryParam,
       });
       if (data && data.status == 200) {
-        commit('setPeople', data.data.results)
-        commit('setPaginate', {
+        commit("setPeople", data.data.results);
+        commit("setPaginate", {
           next: data.data.next,
-          prev: data.data.previous
-        })
+          prev: data.data.previous,
+        });
+      } else {
+        commit("setErrorMsg", "Something went wrong...:(");
       }
-      else {
-        commit('setErrorMsg', 'Something went wrong...:(')
-      }
-    }
+    },
   },
   modules: {},
 });

@@ -19,7 +19,7 @@
         </svg>
       </div>
       <div class="ml-3">
-        <h3 class="text-sm font-medium text-red-800">{{errorMsg}}</h3>
+        <h3 class="text-sm font-medium text-red-800">{{ errorMsg }}</h3>
       </div>
     </div>
   </div>
@@ -33,5 +33,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

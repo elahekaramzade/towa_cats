@@ -9,10 +9,7 @@
       />
     </CharacterList>
     <Pagination :paginate="paginate" />
-    <Alert
-      v-if="errorMsg"
-      :errorMsg="errorMsg"
-    />
+    <Alert v-if="errorMsg" :errorMsg="errorMsg" />
   </div>
 </template>
 

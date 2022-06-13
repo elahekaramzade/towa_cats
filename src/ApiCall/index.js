@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: process.env.VUE_APP_BASE_API_URL
+  baseURL: process.env.VUE_APP_BASE_API_URL,
 });
 // instance.defaults.headers.common['Access-Control-Allow-Origin'] = "*";
 
